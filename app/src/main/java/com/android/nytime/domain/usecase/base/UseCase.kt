@@ -4,7 +4,7 @@ import com.android.nytime.domain.exception.traceErrorException
 import kotlinx.coroutines.*
 import java.util.concurrent.CancellationException
 
-abstract class MostViewUseCase<Type, in Params>() where Type : Any {
+abstract class UseCase<Type, in Params>() where Type : Any {
 
     abstract suspend fun run(params: Params? = null): Type
 
